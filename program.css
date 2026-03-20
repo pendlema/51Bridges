@@ -1,0 +1,22 @@
+﻿.program-hero {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+    .program-hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+
+    .program-hero .hero-subtitle {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 0 auto;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }

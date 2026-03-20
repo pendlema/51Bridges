@@ -1,38 +1,55 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Programs - 51Bridges CrossFit</title>
+    <meta name="description" content="51Bridges CrossFit Program">
+    <title>CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="program.css">
 </head>
 <body>
-    <header>
-        <h1>51Bridges CrossFit</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="kids.html">Kids Programs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
-    <main>
-        <h2>Kids Programs</h2>
-        <p>At 51Bridges CrossFit, we believe in promoting fitness and health for all ages. Our kids' programs are designed to help children develop strength, coordination, and confidence in a fun and safe environment.</p>
-        <p>We offer various classes for different age groups, ensuring that your child finds the right fit. Our highly trained coaches focus on creating a positive atmosphere where kids can enjoy exercising while learning valuable life skills such as teamwork and perseverance.</p>
-        <h3>Program Highlights</h3>
-        <ul>
-            <li>Age-appropriate workouts</li>
-            <li>Focus on fun and engagement</li>
-            <li>Skill development and physical literacy</li>
-        </ul>
-        <p>Join us at 51Bridges CrossFit and watch your child thrive in their fitness journey!</p>
-    </main>
+    <!-- Schedule Hero Section -->
+    <section class="program-hero">
+        <div class="container">
+            <h1>Kids</h1>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 51Bridges CrossFit | Follow us on social media!</p>
-    </footer>
+
+    <section class="team-section">
+        <div class="container">
+            <p>CrossFit Kids is a 4-week course held periodically through the year. We incorporate functional movements in a fun, energetic way with workouts, relays, and games for kids age 5-12.</p>
+            <br />
+            <p>Parents can reach out to us about their 13-year olds to determine if it is more appropriate for them to join the Kids course or regular CrossFit. We’d be happy to talk it through or schedule an orientation/assessment.</p>
+            <br />
+            <p>Registration information is posted on our Facebook page two weeks before each session begins.</p>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Initialize mobile menu AND scroll effect after header is loaded
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));</script>
 </body>
 </html>

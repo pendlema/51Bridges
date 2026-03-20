@@ -5,27 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Welcome to 51Bridges CrossFit, your community for fitness and wellness.">
     <title>51Bridges CrossFit</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="hero">
-        <h1>Welcome to 51Bridges CrossFit</h1>
-        <p>Join our community and start your fitness journey with us!</p>
-        <section class="class-schedule-preview">
-            <h2>Class Schedule Preview</h2>
-            <ul>
-                <li>Mon: 6 AM - CrossFit Basics</li>
-                <li>Wed: 6 PM - Advanced CrossFit</li>
-                <li>Fri: 5 PM - Fun Functional Fitness</li>
-            </ul>
-        </section>
-        <div class="cta-buttons">
-            <a href="#get-started" class="button">Get Started</a>
-            <a href="#view-schedule" class="button">View Schedule</a>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Carousel Section -->
+    <section class="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slides" id="carouselSlides">
+                <!-- Images will be loaded dynamically -->
+            </div>
+            <div class="carousel-overlay"></div>
         </div>
-    </header>
-    <footer>
-        <p>&copy; 2026 51Bridges CrossFit. All rights reserved.</p>
-    </footer>
+        <div class="hero-content">
+            <h1>Push Harder Today For a Stronger Tomorrow</h1>
+            <p class="hero-subtitle">Stay motivated and feel connected with CrossFit Group Training classes.</p>
+            <div class="hero-buttons">
+                <a href="free-trial.html" class="hero-btn hero-btn-primary">Get a 3 Day Free Trial</a>
+                <a href="#how-to-start" class="hero-btn hero-btn-secondary">How Should I Start?</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Initialize mobile menu AND scroll effect after header is loaded
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
 </body>
 </html>

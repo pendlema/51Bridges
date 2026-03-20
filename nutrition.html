@@ -1,34 +1,53 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nutrition Coaching - 51Bridges CrossFit</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="51Bridges CrossFit Program">
+    <title>CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="program.css">
 </head>
 <body>
-    <header>
-        <h1>51Bridges CrossFit</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="nutrition.html">Nutrition Coaching</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header-placeholder"></div>
 
-    <main>
-        <h2>Nutrition Coaching</h2>
-        <p>At 51Bridges CrossFit, we understand that nutrition is a crucial component of your overall fitness journey. Our personalized nutrition coaching is designed to help you fuel your body for optimal performance and recovery.</p>
-        <p>Whether you're looking to lose weight, build muscle, or simply eat healthier, our certified nutrition coaches will work with you to create a tailored nutrition plan that fits your lifestyle and goals. We provide guidance on meal planning, food choices, and healthy eating habits to ensure you stay on track.</p>
-        <p>Join us in our quest for better health and performance through proper nutrition!</p>
-    </main>
+    <!-- Schedule Hero Section -->
+    <section class="program-hero">
+        <div class="container">
+            <h1>Nutrition</h1>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 51Bridges CrossFit. All rights reserved.</p>
-    </footer>
+
+    <section class="team-section">
+        <div class="container">
+            <p>The hardest part of becoming fit and healthy can be nutrition. Eating ultra-processed foods is at the heart of the chronic disease epidemic.</p>
+            <br />
+            <p>We work out 3-5 times a week, but we eat 3-4 times a day. The struggle is real. 51B is here to help you navigate all the nonsense out there and get back to nutrition basics.</p>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                // Initialize mobile menu AND scroll effect after header is loaded
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));</script>
 </body>
 </html>
