@@ -4,7 +4,7 @@
 .schedule-hero {
     background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     color: #fff;
-    padding-top: 120px;
+    padding-top: 140px;
     padding-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;
@@ -100,8 +100,10 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .schedule-hero {
-        padding: 60px 20px;
-        margin-top: 0;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
         .schedule-hero h1 {

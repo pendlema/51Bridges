@@ -52,7 +52,7 @@
 .pricing-hero {
     background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
     color: #fff;
-    padding-top: 120px;
+    padding-top: 140px;
     padding-bottom: 40px;
     padding-left: 10px;
     padding-right: 10px;
@@ -161,11 +161,17 @@
     }
 
     .pricing-hero {
-        padding: 60px 20px;
-        margin-top: 0;
+        padding-top: 100px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
         .pricing-hero h1 {
             font-size: 2rem;
+        }
+
+        .pricing-hero .hero-subtitle {
+            font-size: 1.1rem;
         }
 }
