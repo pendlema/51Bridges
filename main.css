@@ -445,6 +445,11 @@ footer {
         display: none;
     }
 
+    /* Make phone emoji red on mobile */
+    .header-phone .header-link-icon {
+        color: #dc2626;
+    }
+
     .footer-content {
         flex-direction: column;
         gap: 15px;
