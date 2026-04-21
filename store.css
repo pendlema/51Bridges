@@ -1,0 +1,346 @@
+﻿/* Store Page Styles */
+
+.store-hero {
+    background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+    .store-hero h1 {
+        font-size: 3rem;
+        margin: 0 0 10px 0;
+        font-weight: 700;
+    }
+
+    .store-hero p {
+        font-size: 1.3rem;
+        margin: 0;
+        font-weight: 300;
+        opacity: 0.95;
+    }
+
+.intro-section {
+    padding: 60px 0;
+    background: #f9fafb;
+    text-align: center;
+}
+
+    .intro-section h2 {
+        color: #1f2937;
+        margin-bottom: 20px;
+    }
+
+    .intro-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4b5563;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+.product-category-section {
+    padding: 60px 0;
+    background: white;
+}
+
+    .product-category-section.alt {
+        background: #f9fafb;
+    }
+
+.category-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+    .category-header h2 {
+        color: #1f2937;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+.category-tagline {
+    color: #059669;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.category-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+    .category-content.reverse {
+        grid-template-columns: 1fr 1.2fr;
+    }
+
+.category-description h3 {
+    color: #1f2937;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.category-description p {
+    color: #4b5563;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+    .product-list li {
+        color: #4b5563;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        padding: 8px 0;
+        padding-left: 30px;
+        position: relative;
+    }
+
+        .product-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #059669;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+.category-image {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+    .category-image img {
+        width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: contain;
+        display: block;
+        background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    }
+
+.online-store-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: white;
+    text-align: center;
+}
+
+    .online-store-section h2 {
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    .online-store-section > .container > p {
+        color: #d1d5db;
+        font-size: 1.1rem;
+        max-width: 700px;
+        margin: 0 auto 40px;
+    }
+
+.store-card {
+    background: white;
+    color: #1f2937;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.store-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.store-card h3 {
+    color: #1f2937;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.store-card p {
+    color: #6b7280;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn-store {
+    display: inline-block;
+    background: #059669;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+    .btn-store:hover {
+        background: #047857;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(5, 150, 105, 0.4);
+    }
+
+.in-store-section {
+    padding: 60px 0;
+    background: white;
+}
+
+    .in-store-section h2 {
+        text-align: center;
+        color: #1f2937;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+.store-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-card {
+    text-align: center;
+    padding: 40px 30px;
+    background: #f9fafb;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #059669;
+}
+
+    .info-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(5, 150, 105, 0.15);
+    }
+
+.info-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    color: #1f2937;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: white;
+    text-align: center;
+}
+
+    .cta-section h2 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .cta-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto 30px;
+    }
+
+.btn-cta {
+    display: inline-block;
+    background: white;
+    color: #dc2626;
+    padding: 15px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+    .btn-cta:hover {
+        background: #f9fafb;
+        transform: translateY(-2px);
+    }
+
+@media (max-width: 1024px) {
+    .category-content,
+    .category-content.reverse {
+        grid-template-columns: 1fr;
+    }
+
+    .category-image img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .store-hero h1 {
+        font-size: 2rem;
+    }
+
+    .store-hero p {
+        font-size: 1.1rem;
+    }
+
+    .intro-section p {
+        font-size: 1rem;
+    }
+
+    .category-header h2,
+    .online-store-section h2,
+    .in-store-section h2 {
+        font-size: 2rem;
+    }
+
+    .category-tagline {
+        font-size: 1rem;
+    }
+
+    .category-description h3 {
+        font-size: 1.5rem;
+    }
+
+    .category-description p,
+    .product-list li {
+        font-size: 1rem;
+    }
+
+    .category-image img {
+        height: 250px;
+    }
+
+    .store-card {
+        padding: 40px 30px;
+    }
+
+    .store-icon {
+        font-size: 3rem;
+    }
+
+    .store-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .store-info-grid {
+        grid-template-columns: 1fr;
+    }
+}

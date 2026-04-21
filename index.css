@@ -119,44 +119,55 @@
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     }
 
-/* Award Highlight Section */
+/* Award Highlight Section
 .award-highlight-section {
-    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
-    padding: 40px 0;
-    border-bottom: 4px solid #d97706;
+    background: linear-gradient(135deg, #6495ED 0%, #4169E1 100%);
+    padding: 20px 0;
+    border-bottom: 4px solid #4169E1;
+} */
+
+.award-highlight-section {
+    background: linear-gradient(135deg, #2A3F80 0%, #1C2E63 100%);
+    padding: 20px 0;
+    border-bottom: 4px solid #1C2E63;
 }
 
 .award-highlight {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 30px;
-    max-width: 1000px;
+    gap: 15px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .award-icon {
-    font-size: 5rem;
-    line-height: 1;
+    display: none;
+}
+
+.award-text {
+    text-align: center;
+    width: 100%;
 }
 
 .award-text h2 {
-    color: #92400e;
+    color: white;
     font-size: 1.8rem;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     font-weight: 700;
 }
 
 .award-text p {
-    color: #78350f;
+    color: rgba(255, 255, 255, 0.95);
     font-size: 1.05rem;
-    margin: 0 0 15px 0;
-    line-height: 1.6;
+    margin: 0 0 10px 0;
+    line-height: 1.4;
 }
 
 .btn-award {
     display: inline-block;
-    background: #d97706;
-    color: white;
+    background: white;
+    color: #2A3F80; 
     padding: 10px 25px;
     border-radius: 6px;
     text-decoration: none;
@@ -165,29 +176,33 @@
 }
 
     .btn-award:hover {
-        background: #b45309;
+        background: rgba(255, 255, 255, 0.9);
         transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
 
 /* Welcome Section */
 .welcome-section {
-    padding: 80px 0;
-    background: white;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    border-bottom: 4px solid #111827;
 }
 
     .welcome-section h2 {
         text-align: center;
         font-size: 2.5rem;
         margin-bottom: 10px;
-        color: #1f2937;
+        color: white;
     }
 
 .section-subtitle {
     text-align: center;
     font-size: 1.2rem;
-    color: #6b7280;
-    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
 }
+
+
 
 .welcome-content {
     display: grid;
@@ -199,7 +214,7 @@
 .welcome-text p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #4b5563;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 .welcome-stats {
@@ -209,12 +224,13 @@
 }
 
 .stat-card {
-    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    background: rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 8px;
     text-align: center;
     color: white;
-    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .stat-number {
@@ -230,15 +246,20 @@
 
 /* Programs Section */
 .programs-section {
-    padding: 80px 0;
-    background: #f9fafb;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #4b5563 0%, #374151 100%);
+    border-bottom: 4px solid #374151;
 }
 
     .programs-section h2 {
         text-align: center;
         font-size: 2.5rem;
         margin-bottom: 10px;
-        color: #1f2937;
+        color: white;
+    }
+
+    .programs-section .section-subtitle {
+        color: rgba(255, 255, 255, 0.9);
     }
 
 .programs-grid {
@@ -253,14 +274,14 @@
     padding: 40px 30px;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
     border-top: 4px solid #dc2626;
 }
 
     .program-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(220, 38, 38, 0.15);
+        box-shadow: 0 6px 20px rgba(220, 38, 38, 0.4);
     }
 
 .program-icon {
@@ -296,25 +317,13 @@
         transform: translateY(-2px);
     }
 
-/* How to Start Section */
-.how-to-start {
-    padding: 80px 0;
-    background: white;
-}
-
-    .how-to-start h2 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-        color: #1f2937;
-    }
 
 .steps-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .step-card {
@@ -337,13 +346,13 @@
 }
 
 .step-card h3 {
-    color: #1f2937;
+    color: white;
     font-size: 1.3rem;
     margin-bottom: 15px;
 }
 
 .step-card p {
-    color: #6b7280;
+    color: rgba(255, 255, 255, 0.9);
     line-height: 1.7;
 }
 
@@ -371,15 +380,15 @@
 
 /* Why Choose Us Section */
 .why-choose-section {
-    padding: 80px 0;
-    background: #f9fafb;
+    padding: 40px 0;
+    background: linear-gradient(135deg, #E0E0E0 0%, #C8C8C8 100%);
 }
 
     .why-choose-section h2 {
         text-align: center;
         font-size: 2.5rem;
-        margin-bottom: 50px;
-        color: #1f2937;
+        margin-bottom: 30px;
+        color: black;
     }
 
 .feature-grid {
@@ -393,14 +402,14 @@
     padding: 40px 30px;
     background: white;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-top: 4px solid #dc2626;
 }
 
     .feature-box:hover {
         transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(220, 38, 38, 0.15);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
     }
 
 .feature-icon {
@@ -421,10 +430,11 @@
 
 /* Final CTA Section */
 .final-cta-section {
-    padding: 80px 0;
+    padding: 40px 0;
     background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
     color: white;
     text-align: center;
+    border-bottom: 4px solid #111827;
 }
 
     .final-cta-section h2 {
@@ -435,7 +445,7 @@
 
     .final-cta-section .section-subtitle {
         color: #d1d5db;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
 .cta-buttons {
