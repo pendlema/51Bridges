@@ -82,13 +82,22 @@ function initMobileMenu() {
         });
     }
 
-    // Mobile dropdown toggle
+    // Mobile dropdown toggle - collapses if already expanded
     dropdowns.forEach(dropdown => {
         const link = dropdown.querySelector('.nav-link');
         if (link) {
             link.addEventListener('click', function (e) {
                 if (window.innerWidth <= 768) {
                     e.preventDefault();
+                    
+                    // Close other open dropdowns
+                    dropdowns.forEach(otherDropdown => {
+                        if (otherDropdown !== dropdown && otherDropdown.classList.contains('active')) {
+                            otherDropdown.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current dropdown (will collapse if already open)
                     dropdown.classList.toggle('active');
                 }
             });
@@ -98,31 +107,13 @@ function initMobileMenu() {
 
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialize scroll effect immediately
     initScrollEffect();
+    initMobileMenu();
     
-    // Initialize carousel if element exists
-    const carouselSlides = document.getElementById('carouselSlides');
-    if (carouselSlides) {
+    // Initialize carousel if on a page with carousel
+    if (document.getElementById('carouselSlides')) {
         initCarousel();
     }
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            if (href !== '#' && href.length > 1) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            }
-        });
-    });
 });
 
 // Also run immediately in case DOM is already loaded
