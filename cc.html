@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CrossFit Community Cup at 51Bridges CrossFit">
+    <title>CrossFit Community Cup - 51Bridges CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="cc.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="event-hero">
+        <div class="container">
+            <h1>CrossFit Community Cup</h1>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="container">
+            <h1>Celebrate Community Through Competition</h1>
+            <p>The CrossFit Community Cup is our signature team competition that brings together athletes of all levels for a day of challenging workouts, teamwork, and community spirit. This event embodies what CrossFit is all about—pushing your limits alongside your friends and celebrating each other's achievements.</p>
+            <br />
+            <p>Teams of athletes work together to tackle a series of diverse workouts designed to test strength, endurance, skill, and strategy. Whether you're a competitive athlete or just looking for a fun challenge with your gym buddies, the Community Cup has a division for you.</p>
+        </div>
+    </section>
+
+    <section class="event-details-section">
+        <div class="container">
+            <h1>Event Highlights</h1>
+            <ul>
+                <li><h3>Team Competition</h3>Form teams with your fellow athletes and compete in multiple divisions based on skill level.</li>
+                <li><h3>Varied Workouts</h3>Each heat brings new challenges, from heavy lifting to gymnastics to metabolic conditioning.</li>
+                <li><h3>Community Focus</h3>This isn't just about winning—it's about bringing our community together for an unforgettable day of fitness and fun.</li>
+                <li><h3>Spectator Friendly</h3>Bring your family and friends to watch, cheer, and see what CrossFit is all about!</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="event-info-section">
+        <div class="container">
+            <h1>Join the Competition</h1>
+            <p>Ready to test your fitness and build team camaraderie? Register your team for the CrossFit Community Cup! Contact us for event dates, team registration information, and competition details.</p>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>
+    // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));</script>
+</body>
+</html>

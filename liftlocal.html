@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lift Local - 24 Hours for Veterans at 51Bridges CrossFit">
+    <title>Lift Local - 51Bridges CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="liftlocal.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="event-hero">
+        <div class="container">
+            <h1>Lift Local</h1>
+            <p style="font-size: 1.3rem; margin-top: 15px; font-weight: 300;">24 Hours for Veterans</p>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="container">
+            <h1>Supporting Our Local Veterans</h1>
+            <p>Lift Local is 51 Bridges CrossFit's annual 24-hour fundraising event benefiting the Parke County Veterans Council. From noon to noon, our community comes together to complete partner Hero WODs (workouts of the day), each one honoring a fallen service member. This incredible event combines fitness, community, and service to support those who have served our country.</p>
+            <br />
+            <p>Held every summer at our gym in Rockville, Indiana, Lift Local brings together experienced CrossFitters of all levels for a day (and night!) of challenging workouts, camaraderie, and giving back. Whether you participate in one workout or stay for several, you'll be part of something truly special while raising funds for veterans in Parke County.</p>
+        </div>
+    </section>
+
+    <section class="event-details-section">
+        <div class="container">
+            <h1>Event Details</h1>
+            <ul>
+                <li><h3>24 Hours of Hero WODs</h3>From Friday noon to Saturday noon, we complete one partner Hero WOD every hour, honoring fallen heroes and supporting our local veterans.</li>
+                <li><h3>Partner Teams</h3>All workouts are done in teams of 2 or 3. Don't have a partner? No problem—we'll pair you with others at the event.</li>
+                <li><h3>Flexible Participation</h3>Sign up for 1-2 WODs or tackle several throughout the 24 hours. Stay and cheer on others or come back multiple times—it's up to you!</li>
+                <li><h3>Making an Impact</h3>The suggested donation is $20 per WOD, with 100% of donations going directly to the Parke County Veterans Council. Past events have featured matching programs that triple donations!</li>
+                <li><h3>Sponsorship Opportunities</h3>Businesses, families, and individuals can sponsor the event with options from hourly sponsorships to title sponsorships. Contact us to learn more.</li>
+                <li><h3>All Levels Welcome</h3>Experienced CrossFitters from beginners to advanced are encouraged to participate. Coaches provide equipment setup and scaling options, so choose WODs with movements you can execute safely.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="event-info-section">
+        <div class="container">
+            <h1>Join Us for Lift Local</h1>
+            <p>Be part of this incredible 24-hour event supporting the Parke County Veterans Council. Whether you want to compete, volunteer, sponsor, or spectate, we'd love to have you involved. Pre-registration is required to participate. Contact us at (765) 204-5511 or jen@51bridges.com for event dates, registration information, and sponsorship opportunities!</p>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+</body>
+</html>

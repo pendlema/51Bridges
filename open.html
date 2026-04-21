@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CrossFit Open at 51Bridges CrossFit">
+    <title>CrossFit Open - 51Bridges CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="open.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="event-hero">
+        <div class="container">
+            <h1>CrossFit Open</h1>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="container">
+            <h1>What is the CrossFit Open?</h1>
+            <p>The CrossFit Open is the world's largest participatory sporting event, bringing together hundreds of thousands of athletes from around the globe. For three weeks, athletes of all levels complete challenging workouts and submit their scores to see how they stack up against the worldwide CrossFit community.</p>
+            <br />
+            <p>At 51 Bridges CrossFit, the Open is more than just competition—it's a celebration of our community. Whether you're a seasoned competitor or trying your first Open workout, we come together to push ourselves, support each other, and have fun!</p>
+        </div>
+    </section>
+
+    <section class="event-details-section">
+        <div class="container">
+            <h1>Why Participate?</h1>
+            <ul>
+                <li><h3>Test Your Fitness</h3>The Open workouts challenge you in new ways and give you a benchmark to measure your progress year after year.</li>
+                <li><h3>Community Spirit</h3>Join athletes worldwide in this shared experience. At our gym, we'll have Open workout sessions where we tackle the workouts together.</li>
+                <li><h3>Push Your Limits</h3>The Open motivates you to try movements and weights you might not attempt in a regular class.</li>
+                <li><h3>All Levels Welcome</h3>Scaled and modified divisions mean everyone can participate regardless of experience or ability.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="event-info-section">
+        <div class="container">
+            <h1>Get Involved</h1>
+            <p>Ready to join us for the CrossFit Open? Whether you want to compete or just experience the excitement, we'd love to have you be part of this incredible event. Contact us for more information about our Open schedule, team events, and how to register!</p>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>// Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));</script>
+</body>
+</html>

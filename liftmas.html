@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liftmas at 51Bridges CrossFit">
+    <title>Liftmas - 51Bridges CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="liftmas.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="event-hero">
+        <div class="container">
+            <h1>Liftmas</h1>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="container">
+            <h1>Holiday Lifting Celebration</h1>
+            <p>Liftmas is our festive end-of-year Olympic weightlifting competition! As the holiday season approaches, we gather to celebrate the year's progress, hit some PRs, and spread holiday cheer. Don your ugliest holiday sweater and join us for a day of lifting, laughter, and community spirit.</p>
+            <br />
+            <p>This fun and competitive event welcomes lifters of all levels to test their snatch and clean & jerk in a festive atmosphere. Whether you're chasing a platform PR or just want to be part of the holiday fun, Liftmas is the perfect way to close out the year strong.</p>
+        </div>
+    </section>
+
+    <section class="event-details-section">
+        <div class="container">
+            <h1>Event Highlights</h1>
+            <ul>
+                <li><h3>Holiday Competition</h3>Compete in the Olympic lifts with a festive twist—ugly sweaters encouraged!</li>
+                <li><h3>Year-End PRs</h3>Test your progress and finish the year strong with new personal records.</li>
+                <li><h3>Festive Atmosphere</h3>Enjoy holiday decorations, music, and the warm spirit of our lifting community.</li>
+                <li><h3>All Levels Welcome</h3>From first-time competitors to experienced lifters, everyone is welcome to participate and celebrate.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="event-info-section">
+        <div class="container">
+            <h1>Celebrate with Us</h1>
+            <p>Make Liftmas part of your holiday tradition! Join us for this festive weightlifting competition and celebrate the year's achievements with your 51 Bridges family. Contact us for event dates, registration, and competition details!</p>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>// Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+﻿/* About Us Page Styles */
+
+.about-hero {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+    .about-hero h1 {
+        font-size: 3rem;
+        margin: 0 0 10px 0;
+        font-weight: 700;
+    }
+
+    .about-hero p {
+        font-size: 1.3rem;
+        margin: 0;
+        font-weight: 300;
+        opacity: 0.95;
+    }
+
+.story-section {
+    padding: 60px 0;
+    background: #f9fafb;
+}
+
+    .story-section h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #1f2937;
+    }
+
+    .story-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4b5563;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+.journey-section {
+    padding: 60px 0;
+    background: white;
+}
+
+    .journey-section h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #1f2937;
+    }
+
+    .journey-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4b5563;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .journey-section em {
+        color: #dc2626;
+        font-style: italic;
+    }
+
+.mission-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: white;
+    text-align: center;
+}
+
+    .mission-section h1 {
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .mission-section p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+.owners-section {
+    padding: 60px 0;
+    background: #f9fafb;
+}
+
+    .owners-section h1 {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #1f2937;
+    }
+
+.owners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.owner-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .owner-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    }
+
+.owner-content {
+    padding: 30px;
+}
+
+    .owner-content h2 {
+        color: #1f2937;
+        margin: 0 0 10px 0;
+        font-size: 1.8rem;
+    }
+
+.credentials {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin: 0 0 15px 0;
+    letter-spacing: 0.5px;
+}
+
+.owner-content p {
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+
+    .about-hero p {
+        font-size: 1.1rem;
+    }
+
+    .story-section p,
+    .journey-section p,
+    .mission-section p {
+        font-size: 1rem;
+    }
+
+    .owners-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .owner-content h2 {
+        font-size: 1.5rem;
+    }
+}

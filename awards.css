@@ -1,0 +1,288 @@
+﻿/* Awards & Recognition Page Styles */
+
+.awards-hero {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+    .awards-hero h1 {
+        font-size: 3rem;
+        margin: 0 0 10px 0;
+        font-weight: 700;
+    }
+
+    .awards-hero p {
+        font-size: 1.3rem;
+        margin: 0;
+        font-weight: 300;
+        opacity: 0.95;
+    }
+
+.featured-award-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.award-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    padding: 40px;
+    background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(217, 119, 6, 0.2);
+}
+
+.badge-icon {
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.badge-content h2 {
+    color: #92400e;
+    font-size: 1.8rem;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.award-org {
+    color: #78350f;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.award-story {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+    .award-story h1 {
+        text-align: center;
+        color: #1f2937;
+        margin-bottom: 30px;
+    }
+
+    .award-story p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4b5563;
+    }
+
+.recognition-details-section {
+    padding: 60px 0;
+    background: #f9fafb;
+}
+
+    .recognition-details-section h1 {
+        text-align: center;
+        color: #1f2937;
+        margin-bottom: 20px;
+    }
+
+.section-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6b7280;
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.detail-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .detail-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+.detail-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.detail-card h3 {
+    color: #d97706;
+    margin: 0 0 15px 0;
+    font-size: 1.3rem;
+}
+
+.detail-card p {
+    color: #4b5563;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.quote-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: white;
+}
+
+    .quote-section blockquote {
+        max-width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .quote-section p {
+        font-size: 1.3rem;
+        line-height: 1.8;
+        font-style: italic;
+        margin: 0 0 20px 0;
+        color: white;
+    }
+
+    .quote-section cite {
+        display: block;
+        font-size: 1.1rem;
+        font-style: normal;
+        font-weight: 600;
+        color: #fbbf24;
+    }
+
+.gratitude-section {
+    padding: 60px 0;
+    background: white;
+    text-align: center;
+}
+
+    .gratitude-section h1 {
+        color: #1f2937;
+        margin-bottom: 30px;
+    }
+
+    .gratitude-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4b5563;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+.press-release-link {
+    margin-top: 30px !important;
+}
+
+    .press-release-link a {
+        display: inline-block;
+        color: #d97706;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-decoration: none;
+        padding: 12px 30px;
+        border: 2px solid #d97706;
+        border-radius: 6px;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+
+        .press-release-link a:hover {
+            background: #d97706;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    color: white;
+    text-align: center;
+}
+
+    .cta-section h1 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .cta-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 700px;
+        margin: 0 auto 30px;
+    }
+
+.btn-cta {
+    display: inline-block;
+    background: white;
+    color: #dc2626;
+    padding: 15px 40px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
+}
+
+    .btn-cta:hover {
+        background: #f9fafb;
+        transform: translateY(-2px);
+    }
+
+@media (max-width: 768px) {
+    .awards-hero h1 {
+        font-size: 2rem;
+    }
+
+    .awards-hero p {
+        font-size: 1.1rem;
+    }
+
+    .award-badge {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .badge-icon {
+        font-size: 4rem;
+    }
+
+    .badge-content h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .award-org {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .award-story p,
+    .section-intro,
+    .gratitude-section p {
+        font-size: 1rem;
+    }
+
+    .quote-section p {
+        font-size: 1.1rem;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .press-release-link a {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}

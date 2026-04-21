@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veterans Day Chad 1000X at 51Bridges CrossFit">
+    <title>Veterans Day Chad 1000X - 51Bridges CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="chad.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="event-hero">
+        <div class="container">
+            <h1>Veterans Day Chad 1000X</h1>
+        </div>
+    </section>
+
+    <section class="event-section">
+        <div class="container">
+            <h1>Honoring Navy SEAL Chad Wilkinson</h1>
+            <p>On Veterans Day, we honor all who have served our country by completing the "Chad 1000X" workout. This Hero WOD is dedicated to Navy SEAL Chad Wilkinson, who was killed in action in Afghanistan in 2018. The workout consists of 1,000 box step-ups, the same movement Chad performed in his final workout before his last deployment.</p>
+            <br />
+            <p>Chad 1000X is a powerful tribute that brings our community together in remembrance and gratitude. While challenging, this workout is accessible to all fitness levels and serves as a meaningful way to honor our veterans and fallen heroes.</p>
+        </div>
+    </section>
+
+    <section class="event-details-section">
+        <div class="container">
+            <h1>Why Chad 1000X?</h1>
+            <ul>
+                <li><h3>Remember and Honor</h3>This workout is a tribute to Chad Wilkinson and all veterans who have served and sacrificed for our freedom.</li>
+                <li><h3>Mental Fortitude</h3>1,000 step-ups tests your mental toughness and determination, giving you a glimpse into the resilience of our service members.</li>
+                <li><h3>Inclusive Challenge</h3>This workout can be scaled to any fitness level, allowing everyone to participate in honoring our veterans.</li>
+                <li><h3>Community Support</h3>Complete this workout alongside your fellow athletes, encouraging each other through every step.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="event-info-section">
+        <div class="container">
+            <h1>Join Us on Veterans Day</h1>
+            <p>Be part of this meaningful Veterans Day tradition at 51 Bridges CrossFit. Together we'll complete Chad 1000X to honor those who have served. Contact us for event details and how to participate!</p>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>// Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));</script>
+</body>
+</html>

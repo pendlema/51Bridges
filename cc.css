@@ -1,0 +1,94 @@
+﻿/* CrossFit Community Cup Event Page Styles */
+
+.event-hero {
+    background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+    color: white;
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+    .event-hero h1 {
+        font-size: 3rem;
+        margin: 0;
+        font-weight: 700;
+    }
+
+.event-section {
+    padding: 60px 0;
+    background: #f9fafb;
+}
+
+    .event-section h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #1f2937;
+    }
+
+    .event-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4b5563;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+.event-details-section {
+    padding: 60px 0;
+    background: white;
+}
+
+    .event-details-section h1 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #1f2937;
+    }
+
+    .event-details-section ul {
+        list-style: none;
+        padding: 0;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .event-details-section li {
+        margin-bottom: 30px;
+        padding: 20px;
+        background: #f9fafb;
+        border-radius: 8px;
+    }
+
+    .event-details-section h3 {
+        color: #d97706;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+.event-info-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    color: white;
+    text-align: center;
+}
+
+    .event-info-section h1 {
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .event-info-section p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+@media (max-width: 768px) {
+    .event-hero h1 {
+        font-size: 2rem;
+    }
+
+    .event-section p,
+    .event-info-section p {
+        font-size: 1rem;
+    }
+}

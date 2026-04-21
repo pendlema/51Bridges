@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About 51Bridges CrossFit - Meet Owners Mike and Jen Pendleton">
+    <title>About Us - 51Bridges CrossFit</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>About Us</h1>
+            <p>Our Story of Transformation</p>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <div class="container">
+            <h1>Meet the Owners</h1>
+            <p>Flashback to 2014, when Mike and Jen Pendleton were in their mid-40's. Mike was over 300 pounds and had been taking blood pressure medication since age 19. Jen was pre-hypertensive, pre-diabetic and had the markers for metabolic syndrome. Her weight reached an all-time high of 265 pounds. They ate fast food, pizza delivery and spent evenings on the couch.</p>
+            <br />
+            <p>They had stressful jobs, traveled for work, and were raising teenagers. Jen struggled with binge eating disorder (something she still battles to this day) and was told by a doctor she would be full blown type 2 diabetic by 50 if she stayed on this path.</p>
+            <br />
+            <p>Jen felt hopeless because she and Mike had dieted repeatedly, but the weight loss never lasted. Nothing felt sustainable. She wanted off the diet roller coaster and longed for a healthier life and balance, not the extremes of restrictive dieting and then excessive overeating.</p>
+        </div>
+    </section>
+
+    <section class="journey-section">
+        <div class="container">
+            <h1>The CrossFit Journey</h1>
+            <p>As Jen learned more about balanced nutrition and how to still eat the foods she and Mike loved (like pizza, tacos and ice cream), it was time to add a fitness component. Their retirement dream was to hike in the mountains and camp and neither of them had seriously worked out in years. Jen's doctor suggested CrossFit. After Jen stopped laughing, she realized her doctor was serious.</p>
+            <br />
+            <p><em>"I didn't think CrossFit was for me,"</em> says Jen. But, after some research, months of pondering and a little encouragement, she joined CrossFit in 2016 and never looked back. <em>"I can't explain it,"</em> says Jen. <em>"I hate working out, but I LOVE CrossFit. The community aspect is amazing. CrossFitters accept you on day one. I love the fact that it is observable, measurable repeatable. I could feel my body changing, I could see my progress in the gym, and it motivated me. I had more stamina; I was challenged in the most amazing ways and my fit family was there encouraging me. I was hooked."</em></p>
+            <br />
+            <p>Mike joined CrossFit with Jen six months later and they both say the investment in themselves is the best one they've ever made. They collectively lost over 200 pounds and have sustained it for years now. <em>"We are no longer waiting for diabetes and heart disease to come to us,"</em> says Mike, <em>"we prioritized our health and now we're off all our meds, off the couch and in the gym."</em></p>
+        </div>
+    </section>
+
+    <section class="mission-section">
+        <div class="container">
+            <h1>Our Mission</h1>
+            <p>Mike and Jen believe that fitness and nutrition are the keys to affordable healthcare and longevity. Opening 51 Bridges CrossFit in Rockville, Indiana is their way of helping others change their lives by learning how to take charge of their health.</p>
+        </div>
+    </section>
+
+    <section class="owners-section">
+        <div class="container">
+            <h1>The Coaching Team</h1>
+            <div class="owners-grid">
+                <div class="owner-card">
+                    <div class="owner-content">
+                        <h2>Jen Pendleton</h2>
+                        <p class="credentials">CF-L2, USAW-L1, Pn1</p>
+                        <p>Jen Pendleton is a CrossFit Level 2 Trainer and a USA Weightlifting Level 1 Coach and has been coaching CrossFit since 2018. In 2019 she earned the distinction of Functional Gymnastics Trainer, a preferred CrossFit course. She has been a Precision Nutrition Level 1 Coach (Pn1) in Sports & Exercise Nutrition since 2018 and virtually coaches clients from all over the U.S. through 51 Bridges Nutrition.</p>
+                    </div>
+                </div>
+
+                <div class="owner-card">
+                    <div class="owner-content">
+                        <h2>Mike Pendleton</h2>
+                        <p class="credentials">CF-L1</p>
+                        <p>Mike Pendleton is a CrossFit Level 1 Trainer and has been CrossFitting since 2016. He has been a judge for the CrossFit Open since 2020. He's all things tech, equipment, and back-end of the business.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="main.js"></script>
+    <script>// Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+                initMobileMenu();
+                initScrollEffect();
+            })
+            .catch(error => console.error('Error loading header:', error));
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));</script>
+</body>
+</html>
